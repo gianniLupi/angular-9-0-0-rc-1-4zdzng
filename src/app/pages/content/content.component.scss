@@ -1,0 +1,14 @@
+.nav-menu {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 56px;
+    background-color: red;
+    color: white;
+    overflow: hidden;
+}
+
+::ng-deep {
+  .mat-tab-label-active {
+    color: #fff;
+  }
+}

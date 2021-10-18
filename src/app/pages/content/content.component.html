@@ -1,0 +1,18 @@
+<div fxLayout="column">
+    <img fxFlex="10" class="responsive" src="https://dummyimage.com/600x400/000/fff"  alt="menu picture" />
+
+    <div class="nav-menu color-primary">
+      <nav #tabNav mat-tab-nav-bar color="accent" [disableRipple]="true">
+        <a mat-tab-link *ngFor="let navItem of navItems; let i = index" [active]="i === activeIndex">
+          {{ navItem.name }}
+        </a>
+      </nav>
+    </div>
+
+    <div fxLayout="column" scrolledTo [offsetElement]="64" (reachedIndex)="onReachedIndex($event)">
+      <div *ngFor="let item of items">
+          <h2 #scrolledToElement>{{ item.name }}</h2>
+          Pellentesque finibus ipsum ut nibh dapibus dapibus. Fusce finibus quam mauris, id eleifend nulla vestibulum vitae. Morbi vulputate metus a justo vestibulum tempus. Donec eu bibendum felis. Nulla consequat mattis nisi eget tempus. In accumsan leo ac erat rutrum mollis. Pellentesque sit amet dui pulvinar, vestibulum libero elementum, maximus nisl. Phasellus accumsan purus quis enim posuere, id dignissim felis vehicula. Quisque elit dolor, mollis vel sagittis nec, scelerisque sit amet nunc. Nam vitae feugiat lorem, in faucibus ex. Vivamus feugiat ex purus, non volutpat tortor blandit non. Nunc risus leo, cursus eu libero vitae, rutrum ullamcorper nunc. Curabitur lacinia hendrerit scelerisque. In gravida ultrices neque eget gravida. Sed ut neque mollis, fermentum justo sed, ultrices leo. Suspendisse arcu nulla, molestie et odio ut, consequat euismod felis.
+      </div>
+    </div>
+</div>

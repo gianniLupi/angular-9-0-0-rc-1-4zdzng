@@ -1,0 +1,19 @@
+/* Add application styles & imports to this file! */
+html, body { 
+    height: auto; 
+    // HERE change from height: auto to height: 100% 
+    // and sticky headers works BUT no scroll angular event
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.mat-body-strong {
+    font-weight: 600;
+}
+
+.centered {
+    text-align: center;
+}
